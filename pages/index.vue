@@ -1,37 +1,64 @@
 <template>
   <main>
     <section class="fold">
-      <div class="flex center fill-height">
-        <h1 class="title">Welcome</h1>
-      </div>
-    </section>
-    <section class="fold">
-      <div class="flex center fill-height">
-        <h1 class="title">Welcome</h1>
+      <div class="flex center fill-height flex-col">
+        <!-- TODO remove main-block and replace  -->
+        <div class="title-holder">
+          <h1 class="title">Welcome</h1>
+        </div>
+        <div class="bg-holder">
+          <div class="bg-square rellax bg" data-rellax-speed="10"></div>
+          <!-- TODO align square center -->
+        </div>
       </div>
     </section>
   </main>
 </template>
 
 <script>
-export default {};
+import Rellax from "rellax";
+export default {
+  mounted() {
+    var laxSquare = new Rellax(".bg-square");
+  }
+};
 </script>
 
 <style>
-.flex {
+.title-holder {
+  width: 500px;
+  height: 100px;
+  position: relative;
   display: flex;
-}
-.center {
   align-items: center;
   justify-content: center;
 }
 .title {
-  width: auto;
+  padding-bottom: 2rem;
 }
-.fold {
-  height: 99vh;
+/* .title {
+  position: absolute;
+  border: solid blue 1px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: max-content; 
+  } */
+
+.bg-holder {
+  width: 102px;
+  position: relative;
+  /* TODO Remove */
+  border: 1px solid orange;
+  z-index: -1;
 }
-.fill-height {
-  height: 100%;
+.bg-square {
+  width: 100px;
+  height: 530px;
+  top: -230px;
+  position: absolute;
+  background: #e0ecf3;
+  z-index: -10;
 }
 </style>

@@ -1,0 +1,25 @@
+/* flex and center */
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.title {
+  width: auto;
+}
+
+.fold {
+  height: 99vh;
+}
+
+.fill-height {
+  height: 100%;
+}

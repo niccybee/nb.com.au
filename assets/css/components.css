@@ -1,0 +1,17 @@
+/* BUTTONS */
+.btn {
+  margin: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* btn_01 */
+  font-size: 1rem;
+  max-width: 250px;
+}
+
+.btn-secondary {
+  color: #504e4e;
+  border: #504e4e solid 1.5px;
+  border-radius: 5px;
+}

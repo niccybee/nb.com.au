@@ -2,13 +2,6 @@
   width: 100vw;
 }
 
-/* TODO remove after testing */
-.block {
-  border: 1px solid red;
-}
-
-/* end */
-
 .grid {
   display: grid;
   /* remove once we fill main with content */
