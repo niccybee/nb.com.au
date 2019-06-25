@@ -2,7 +2,7 @@
 
 > Version 13 of my website
 
-Uses [nuxt](https://nuxtjs.org/) and [rellax](https://github.com/dixonandmoe/rellax) and
+Uses [nuxt](https://nuxtjs.org/) and [rellax](https://github.com/dixonandmoe/rellax)
 
 ## Build Setup
 
