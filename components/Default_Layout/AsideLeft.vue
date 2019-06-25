@@ -43,6 +43,7 @@ export default {
   position: fixed;
   top: 0;
   left: 4%;
+  z-index: 2;
 }
 .social-container {
   border: solid sienna 1px;
@@ -65,5 +66,6 @@ export default {
 .bg-half-circle {
   position: absolute;
   top: 100vh;
+  z-index: -2;
 }
 </style>

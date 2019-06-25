@@ -53,7 +53,7 @@ export default {
 
 /* TODO remove after testing */
 .block {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* end */
