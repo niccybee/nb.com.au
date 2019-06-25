@@ -23,3 +23,9 @@
 .fill-height {
   height: 100%;
 }
+
+.no-b-pad {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  ;
+}

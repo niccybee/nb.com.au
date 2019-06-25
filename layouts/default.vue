@@ -6,7 +6,7 @@
     <div class="main block">
       <nuxt/>
     </div>
-    <footer class="footer block flex center">Nicholas Benson {{year}}</footer>
+    <footer class="footer block flex center">⚡️ Nic Benson {{year}} ⚡️</footer>
   </div>
 </template>
 

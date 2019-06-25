@@ -1,6 +1,7 @@
 <template>
   <nuxt-link to="/">
     <svg
+      class="svg-logo"
       width="127"
       height="77"
       viewBox="0 0 127 77"
@@ -144,4 +145,13 @@ export default {
 </script>
 
 <style>
+/* TODO some kind of hover animation on the logo */
+/* .svg-logo::after {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: box-shadow 0.3 ease;
+}
+.svg-logo:hover::after {
+  opacity: 1;
+} */
 </style>

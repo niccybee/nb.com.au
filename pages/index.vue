@@ -13,9 +13,11 @@
         </div>
       </div>
     </section>
-    <section class="fold">
+    <section id="about-me" class="fold">
       <div class="content-container flex center flex-col">
         <h2>Who Am I?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis atque quasi? Facilis nulla quaerat nesciunt necessitatibus exercitationem, quos magni labore dolor enim fugiat quo aperiam autem nihil nisi neque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at autem quae veniam molestiae. Sapiente cumque deleniti sint quaerat voluptatem consequuntur aperiam? Aut, cupiditate atque quae iure quasi sapiente repellendus!</p>
       </div>
     </section>
   </main>
