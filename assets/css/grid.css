@@ -1,0 +1,56 @@
+.wrap {
+  width: 100vw;
+}
+
+/* TODO remove after testing */
+.block {
+  border: 1px solid red;
+}
+
+/* end */
+.grid {
+  display: grid;
+  /* remove once we fill main with content */
+  min-height: 100vh;
+  /* end */
+}
+
+.grid-site {
+  grid-template-columns: 18% 60% 18%;
+  grid-template-rows: 1/3fr 1/3fr 1/3fr;
+  grid-template-areas:
+    "aside-left header aside-right"
+    "aside-left main aside-right"
+    "aside-left footer aside-right";
+  grid-gap: 2%;
+}
+
+.aside {
+  min-height: 100vh;
+}
+
+.aside-left {
+  grid-area: aside-left;
+}
+
+.aside-right {
+  grid-area: aside-right;
+}
+
+.main {
+  grid-area: main;
+  min-height: 100%;
+}
+
+.header {
+  grid-area: header;
+  min-height: 2rem;
+  max-height: 4rem;
+}
+
+.footer {
+  grid-area: footer;
+  min-height: 2rem;
+  max-height: 4rem;
+  align-self: end;
+}
