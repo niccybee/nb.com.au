@@ -22,3 +22,22 @@ h1 {
   color: #000000;
 
 }
+
+h2 {
+  /* h2-b */
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 98px;
+
+}
+
+h3 {
+  /* h3 */
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+}

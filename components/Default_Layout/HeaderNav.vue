@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="block">
     <nav>
-      <nuxt-link to="/">Past Work</nuxt-link>
+      <nuxt-link to="/work">Past Work</nuxt-link>
       <nuxt-link to="/">About</nuxt-link>
       <nuxt-link to="/">CV</nuxt-link>
     </nav>
@@ -22,7 +22,6 @@ nav {
 }
 nav > a {
   color: #54798e;
-  font-weight: 600;
   padding-bottom: 0.05rem;
 }
 nav > a:hover {

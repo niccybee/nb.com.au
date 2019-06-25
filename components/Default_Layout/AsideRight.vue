@@ -2,8 +2,9 @@
   <aside class="aside aside-right block">
     <!-- <div class="bg circle">...</div> -->
     <div class="circle-container">
-      <div class="svg-circle rellax" data-rellax-speed="-3">
-        <BgCircle/>
+      <div class="svg-circle rellax">
+        <!-- TODO fix circle rellax movement -->
+        <BgCircle class="bg-circle"/>
       </div>
     </div>
     <div class="contact-container">
@@ -20,7 +21,10 @@ export default {
   components: {
     BgCircle
   },
-  mounted() {}
+  mounted() {
+    var laxBgCircle = new Rellax(".svg-circle");
+    // TODO fix this rellax element to a slow move
+  }
 };
 </script>
 
@@ -28,16 +32,14 @@ export default {
 /* TODO put in components */
 .front-page-btn {
   position: fixed;
-  right: 2rem;
+  top: 1.2rem;
+  right: 4%;
   z-index: 2;
 }
 
 /* end */
 /* svg circle attampt */
-.circle-container {
-  position: relative;
-  border: solid salmon 1px;
-}
+
 .svg-circle {
   position: absolute;
   top: 0;

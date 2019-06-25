@@ -6,7 +6,7 @@
     <div class="main block">
       <nuxt/>
     </div>
-    <div class="footer block">Nicholas Benson {{year}}</div>
+    <footer class="footer block flex center">Nicholas Benson {{year}}</footer>
   </div>
 </template>
 
@@ -53,19 +53,10 @@ export default {
 
 /* TODO remove after testing */
 .block {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
-.logo-container {
-  /* TODO reformat to utility style */
-  width: 100%;
-  height: max-content;
-  width: max-content;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  left: 1rem;
-}
+
 /* end */
+footer {
+}
 </style>

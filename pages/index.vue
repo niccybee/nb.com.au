@@ -7,9 +7,15 @@
           <h1 class="title">Welcome</h1>
         </div>
         <div class="bg-holder">
-          <div class="bg-square rellax bg" data-rellax-speed="10"></div>
-          <!-- TODO align square center -->
+          <div class="bg-square rellax bg" data-rellax-speed="10">
+            <!-- TODO clean up "bg" things -->
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="fold">
+      <div class="content-container flex center flex-col">
+        <h2>Who Am I?</h2>
       </div>
     </section>
   </main>
@@ -18,6 +24,7 @@
 <script>
 import Rellax from "rellax";
 export default {
+  components: {},
   mounted() {
     var laxSquare = new Rellax(".bg-square");
   }
@@ -25,6 +32,9 @@ export default {
 </script>
 
 <style>
+/* TODO clean styles : containers font-colors/styles */
+.content-container {
+}
 .title-holder {
   width: 500px;
   height: 100px;
@@ -50,7 +60,6 @@ export default {
   width: 102px;
   position: relative;
   /* TODO Remove */
-  border: 1px solid orange;
   z-index: -1;
 }
 .bg-square {
@@ -60,5 +69,9 @@ export default {
   position: absolute;
   background: #e0ecf3;
   z-index: -10;
+}
+.bg-half-circle {
+  position: absolute;
+  left: -100;
 }
 </style>
