@@ -8,6 +8,7 @@
 }
 
 /* end */
+
 .grid {
   display: grid;
   /* remove once we fill main with content */
@@ -53,4 +54,23 @@
   min-height: 2rem;
   max-height: 4rem;
   align-self: end;
+}
+
+@media only screen and (max-width: 610px) {
+  .grid {
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+    grid-template-areas:
+
+      "aside-left aside-right"
+      "header header"
+      "main main"
+      "footer footer"
+    ;
+  }
+
+  .wrap>* {
+    /* width: 100%; */
+    min-height: 0;
+  }
 }

@@ -1,8 +1,15 @@
 <template>
   <main>
-    <div class="flex center">
-      <h1>Welcome</h1>
-    </div>
+    <section class="fold">
+      <div class="flex center fill-height">
+        <h1 class="title">Welcome</h1>
+      </div>
+    </section>
+    <section class="fold">
+      <div class="flex center fill-height">
+        <h1 class="title">Welcome</h1>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -11,11 +18,20 @@ export default {};
 </script>
 
 <style>
-.title {
+.flex {
   display: flex;
 }
 .center {
   align-items: center;
   justify-content: center;
+}
+.title {
+  width: auto;
+}
+.fold {
+  height: 99vh;
+}
+.fill-height {
+  height: 100%;
 }
 </style>
