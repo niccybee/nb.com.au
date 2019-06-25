@@ -1,10 +1,12 @@
-# 015-nuxt-netlify
+# Nb.com.au
 
-> My transcendent Nuxt.js project
+> Version 13 of my website
+
+Uses [nuxt](https://nuxtjs.org/) and [rellax](https://github.com/dixonandmoe/rellax) and
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
