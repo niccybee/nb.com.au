@@ -55,15 +55,34 @@
     grid-gap: 0;
     grid-template-areas:
 
-      "aside-left aside-right"
-      "header header"
-      "main main"
-      "footer footer"
+      "header"
+      "main"
+      "footer"
     ;
+  }
+
+  .aside {
+    max-height: 4rem;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+  }
+
+  header {
+    max-height: 4rem;
   }
 
   .wrap>* {
     /* width: 100%; */
     min-height: 0;
+    display: block;
   }
+
+  /* TODO move later or clean up */
+  .social-container {
+    display: none;
+    visibility: hidden;
+  }
+
 }

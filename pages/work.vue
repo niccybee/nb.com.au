@@ -2,8 +2,9 @@
   <main>
     <section class="fold">
       <div class="content-container flex center flex-col">
-        <h1>Work</h1>
-        <div class="work-display work-display-lax rellax">
+        <h1 class="no-b-pad">Work</h1>
+        <h3 class="highlights-lax rellax" data-rellax-speed="-5">Highlights</h3>
+        <div class="work-display work-display-lax rellax test">
           <article class="work-item"></article>
           <article class="work-item"></article>
           <article class="work-item"></article>
@@ -13,25 +14,12 @@
         </div>
       </div>
     </section>
-    <section class="fold">
-      <div class="content-container flex center flex-col">
-        <div class="article-display">
-          <h2>PDF Download Section</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, harum exercitationem rerum nostrum nobis eos. Eveniet quos incidunt ex itaque quas dignissimos veritatis maxime, assumenda quia ipsam. Dignissimos, quas libero.</p>
-          <div class="flex center">
-            <div class="btn btn-primary">Download</div>
-          </div>
-        </div>
-        <!-- <article class="flex center flex-col">
-          
-        </article>-->
-      </div>
-    </section>
+    <PDFDownloadModal />
     <section class="fold">
       <div class="content-container flex center flex-col">
         <!-- <h1 class="no-b-pad">Work</h1> -->
         <h3>Logos</h3>
-        <div class="work-display">
+        <div class="work-display work-display-lax2 test" data-rellax-speed="2">
           <article class="work-item"></article>
           <article class="work-item"></article>
           <article class="work-item"></article>
@@ -46,9 +34,16 @@
 
 <script>
 import Rellax from "rellax";
+import PDFDownloadModal from "@/components/PDFDownloadModal";
+
 export default {
+  components: {
+    PDFDownloadModal
+  },
   mounted() {
     var laxWorkDisplay = new Rellax(".work-display-lax");
+    var laxWorkDisplay2 = new Rellax(".work-display-lax2");
+    var laxHightlights = new Rellax(".highlights-lax");
   }
 };
 </script>
@@ -66,15 +61,11 @@ export default {
   height: 12rem;
   background: #e0ecf3;
 }
-.article-display {
-  width: 130%;
-  padding: 2rem;
-  min-height: 2rem;
-  background: #54798e;
-  /* TODO fix this to typeog css */
-  color: white;
-  text-align: center;
-  /* border: 1px solid blue; */
+
+/* TODO remove this and  */
+/* FIX  */
+.top-space {
+  margin-top: 3rem;
 }
 /* TODO put in media queries other section */
 @media only screen and (max-width: 610px) {

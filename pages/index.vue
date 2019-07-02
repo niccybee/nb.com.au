@@ -35,6 +35,9 @@ export default {
 
 <style>
 /* TODO clean styles : containers font-colors/styles */
+.fold {
+  /* border: sandybrown solid 2px; */
+}
 .content-container {
 }
 .title-holder {

@@ -1,14 +1,9 @@
 <template>
-  <aside class="aside aside-left block flex flex-col">
+  <aside class="aside aside-left block flex flex-col test">
     <nux-link to="/" class="flex logo-container">
       <Logo/>
     </nux-link>
-    <div class="social-container flex center flex-col">
-      <div class="social-icon-item email"></div>
-      <div class="social-icon-item insta"></div>
-      <div class="social-icon-item twit"></div>
-      <div class="social-icon-item fb"></div>
-    </div>
+    <SocialLinks/>
     <div class="bg-holder">
       <BgHalfCircle class="bg-half-circle"/>
       <!-- TODO clean up bg & helpers -->
@@ -19,10 +14,13 @@
 <script>
 import Rellax from "rellax";
 import Logo from "@/components/Logo";
+import SocialLinks from "@/components/SocialLinks";
 import BgHalfCircle from "@/components/BgHalfCircle";
+
 export default {
   components: {
     Logo,
+    SocialLinks,
     BgHalfCircle
   },
   mounted() {
@@ -45,24 +43,7 @@ export default {
   left: 4%;
   z-index: 2;
 }
-.social-container {
-  border: solid sienna 1px;
-  position: fixed;
-  width: 6rem;
-  height: 12rem;
-}
-.social-container .email {
-  background-image: url("/assets/icons/iconmonstr-email-10.svg");
-}
-.social-container .insta {
-  background-image: url("/assets/icons/iconmonstr-email-10.svg");
-}
-.social-container .twit {
-  background-image: url("/assets/icons/iconmonstr-twitter-4.svg");
-}
-.social-container .fb {
-  background-image: url("/assets/icons/iconmonstr-email-10.svg");
-}
+
 .bg-half-circle {
   position: absolute;
   top: 100vh;

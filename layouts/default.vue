@@ -1,12 +1,15 @@
 <template>
   <div class="wrap grid grid-site" @scroll="scrollDistanceCalc">
-    <HeaderNav/>
-    <AsideLeft/>
-    <AsideRight/>
-    <div class="main block">
-      <nuxt/>
-    </div>
-    <footer class="footer block flex center">⚡️ Nic Benson {{year}} ⚡️</footer>
+    <HeaderNav class="test" />
+    <AsideLeft class="test" />
+    <AsideRight class="test" />
+
+    <nuxt />
+
+    <footer class="footer block flex center">
+      ⚡️ Nic Benson {{year}} ⚡️
+      <nuxt-link to="/bex3300">BEX3300</nuxt-link>
+    </footer>
   </div>
 </template>
 
@@ -42,6 +45,7 @@ export default {
 <style>
 /* TODO create mobile resp */
 @import "@/assets/css/reset.css";
+@import "@/assets/css/variables.css";
 @import "@/assets/css/grid.css";
 @import "@/assets/css/typography.css";
 @import "@/assets/css/components.css";
@@ -58,5 +62,8 @@ export default {
 
 /* end */
 footer {
+}
+.content-container {
+  padding: 1rem;
 }
 </style>
