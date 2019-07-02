@@ -1,0 +1,88 @@
+[debug] [2019-07-02T23:01:51.646Z] ----------------------------------------------------------------------
+[debug] [2019-07-02T23:01:51.648Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-07-02T23:01:51.648Z] CLI Version:   3.13.1
+[debug] [2019-07-02T23:01:51.648Z] Platform:      darwin
+[debug] [2019-07-02T23:01:51.648Z] Node Version:  v10.15.1
+[debug] [2019-07-02T23:01:51.649Z] Time:          Wed Jul 03 2019 09:01:51 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:01:51.649Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-02T23:01:51.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-02T23:01:51.661Z] > authorizing via signed-in user
+[debug] [2019-07-02T23:01:51.663Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-02T23:01:51.663Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/IGqn3OUSdq41_1afndrS5HGkjUFNp5VcvFfLA3WS5y4',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jul 03 2019 09:01:51 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:01:52.114Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-02T23:01:52.127Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nb-blog-9dd29  
+ Wed Jul 03 2019 09:01:52 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:01:53.161Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-02T23:01:53.162Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nb-blog-9dd29/tokens  
+ Wed Jul 03 2019 09:01:53 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:01:54.090Z] <<< HTTP RESPONSE 200
+[info] 1
+[info] 
+[info] === Deploying to 'nb-blog-9dd29'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2019-07-02T23:01:55.453Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/nb-blog-9dd29/uploads/-Liov4BXw7fPyAUmXWJq?fileCount=32&message=  
+ Wed Jul 03 2019 09:01:55 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:03:16.028Z] <<< HTTP RESPONSE 410
+[debug] [2019-07-02T23:03:16.029Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2019-07-02T23:03:16.031Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:43:25)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:277:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-07-02T23:06:54.308Z] ----------------------------------------------------------------------
+[debug] [2019-07-02T23:06:54.310Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-07-02T23:06:54.310Z] CLI Version:   3.13.1
+[debug] [2019-07-02T23:06:54.310Z] Platform:      darwin
+[debug] [2019-07-02T23:06:54.310Z] Node Version:  v10.15.1
+[debug] [2019-07-02T23:06:54.311Z] Time:          Wed Jul 03 2019 09:06:54 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:06:54.311Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-02T23:06:54.325Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-02T23:06:54.325Z] > authorizing via signed-in user
+[debug] [2019-07-02T23:06:54.327Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nb-blog-9dd29  
+ Wed Jul 03 2019 09:06:54 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:06:55.711Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-02T23:06:55.712Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nb-blog-9dd29/tokens  
+ Wed Jul 03 2019 09:06:55 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:06:56.542Z] <<< HTTP RESPONSE 200
+[info] 1
+[info] 
+[info] === Deploying to 'nb-blog-9dd29'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2019-07-02T23:06:58.197Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/nb-blog-9dd29/uploads/-LiowE3vuVEhm2y2TviX?fileCount=32&message=  
+ Wed Jul 03 2019 09:06:58 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-02T23:07:09.693Z] <<< HTTP RESPONSE 410
+[debug] [2019-07-02T23:07:09.693Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2019-07-02T23:07:09.695Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:43:25)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:277:13)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,11 +1,11 @@
 <template>
-  <aside class="aside aside-left block flex flex-col test">
+  <aside class="aside aside-left block flex flex-col">
     <nux-link to="/" class="flex logo-container">
-      <Logo/>
+      <Logo />
     </nux-link>
-    <SocialLinks/>
+    <SocialLinks />
     <div class="bg-holder">
-      <BgHalfCircle class="bg-half-circle"/>
+      <BgHalfCircle class="bg-half-circle" />
       <!-- TODO clean up bg & helpers -->
     </div>
   </aside>

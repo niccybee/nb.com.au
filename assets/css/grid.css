@@ -5,7 +5,7 @@
 .grid {
   display: grid;
   /* remove once we fill main with content */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* end */
 }
 
@@ -51,10 +51,10 @@
 
 @media only screen and (max-width: 610px) {
   .grid {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
     grid-gap: 0;
     grid-template-areas:
-
       "header"
       "main"
       "footer"
@@ -71,9 +71,10 @@
 
   header {
     max-height: 4rem;
+    width: 100vw;
   }
 
-  .wrap>* {
+  .wrap {
     /* width: 100%; */
     min-height: 0;
     display: block;

@@ -1,5 +1,5 @@
 {
-  "name": "015-nuxt-netlify",
+  "name": "nb-2019",
   "version": "1.0.0",
   "description": "My transcendent Nuxt.js project",
   "author": "NBWeb",
@@ -15,6 +15,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "dayjs": "^1.8.14",
+    "firebase": "^6.2.4",
+    "gl-matrix": "^3.0.0",
     "nuxt": "^1.0.0",
     "rellax": "^1.10.0"
   },

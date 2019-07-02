@@ -1,8 +1,8 @@
 <template>
   <div class="wrap grid grid-site" @scroll="scrollDistanceCalc">
-    <HeaderNav class="test" />
-    <AsideLeft class="test" />
-    <AsideRight class="test" />
+    <HeaderNav class />
+    <AsideLeft class />
+    <AsideRight class />
 
     <nuxt />
 
@@ -62,6 +62,7 @@ export default {
 
 /* end */
 footer {
+  width: 100vw;
 }
 .content-container {
   padding: 1rem;

@@ -1,5 +1,6 @@
 <template>
-  <header class="block">
+  <header>
+    <!-- class 'block' to header -->
     <nav>
       <nuxt-link class="nav-link" to="/work">Past Work</nuxt-link>
       <nuxt-link class="nav-link" to="/#about-me">About</nuxt-link>
